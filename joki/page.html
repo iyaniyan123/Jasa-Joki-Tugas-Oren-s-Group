@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oren's Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <gambar autoplay muted loop id="background-gambar">
+        <source src="Kecerdasan-Buatan-dalam-Dunia-Terjemahan.webp" type="image">
+    </gambar>
+
+    <header>
+        <h1>Jasa Joki Tugas</h1>
+        <h1>Oren's Group</h1>
+        <p>Solusi cepat dan terpercaya untuk membantu tugas lo!</p>
+
+        <p>Tugas Numpuk Jokiin Ajaaa😊</p>
+    </header>
+
+    <section id="services">
+        <h2>Layanan Joki</h2>
+        <h2>Kami Menyediakan Layanan Sebagai Berikut.</h2>
+        
+        <div class="service">
+            <img src="iyan1.webp" alt="Jasa Makalah">
+            <h3>Makalah</h3>
+            <p>Harga: Rp10,000</p>
+        </div>
+
+        <div class="service">
+            <img src="iyan2.jpg" alt="Jasa Laporan">
+            <h3>Laporan</h3>
+            <p>Harga: Rp10,000</p>
+        </div>
+
+        <div class="service">
+            <img src="iyan3.jpg" alt="Jasa Jurnal">
+            <h3>Jurnal</h3>
+            <p>Harga: Rp10,000</p>
+        </div>
+
+        <div class="service">
+            <img src="iyan4.jpg" alt="Jasa PPT">
+            <h3>PPT</h3>
+            <p>Harga: Rp15,000</p>
+        </div>
+
+        <div class="service">
+            <img src="iyan5.jpg" alt="Pemrograman Dasar">
+            <h3>Pemrograman Dasar</h3>
+            <p>Harga: Rp25,000</p>
+        </div>
+
+        <div class="service">
+            <img src="a" alt="Buat Gambar">
+            <h3>Buat Gambar</h3>
+            <p>Harga: Situasional</p>
+        </div>
+
+        <div class="service">
+            <img src="b" alt="Edit Foto Atau Video">
+            <h3>Edit</h3>
+            <p>Harga: Situasional</p>
+        </div>
+
+    </section>
+
+    <section id="testimonials">
+        <h2>Beberapa Bukti Transaksi & Pengalaman Pelanggan</h2>
+        <h2>Lebih Dari Ratusan Costumer yang telah menjadi langganan kami</h2>
+        
+        <div class="testimonial">
+            <img src="3.jpg" alt="Bukti Transaksi">
+            <p>"Jasa ini sangat membantu dalam penyelesaian tugas makalah saya. Tepat waktu dan hasilnya memuaskan👍"</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="2.jpg" alt="Bukti Transaksi">
+            <p>"Tidak rugi joki tugas di sini, sdh harga murah pengerjaan cepat lagi😊"</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="4.jpg" alt="Bukti Transaksi">
+            <p>"Kualitas pengerjaan laporan saya sangat baik. Terima kasih kaka😉"</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="1.jpg" alt="Bukti Transaksi">
+            <p>"Worth it lah untuk harga segitu👍"</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="5.jpg" alt="Kepuasan pelanggan terhadap kami">
+            <p>"Jasa pemrograman dasarnya sangat membantu. Proyek saya selesai dengan cepat😁"</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami di WhatsApp atau email untuk informasi lebih lanjut.</p>
+        <p>Gak Pake lamaaa, Bilang Saja Kalau Mau Jokii😉.</p>
+        <a href="https://wa.me/6285366763269" class="whatsapp-button">Chat via WhatsApp</a>
+        <p>Nomor HP: +62 853-6676-3269</p>
+        <p>Email: opporj74@email.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jasa Joki Tugas. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+       window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.service, .testimonial');
+            elements.forEach((element) => {
+                const rect = element.getBoundingClientRect();
+                
+                if (rect.top < window.innerHeight - 50 && rect.bottom > 0) {
+                    element.classList.add('scroll-in');
+                } else {
+                    element.classList.remove('scroll-in');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
